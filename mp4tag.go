@@ -67,7 +67,7 @@ func Open(trackPath string) (*MP4, error) {
 		f: f,
 		size : stat.Size(),
 		path: trackPath,
-		upperCustom: true,
+		upperCustom: false,
 	}
 	err = mp4.checkHeader()
 	if err != nil {
